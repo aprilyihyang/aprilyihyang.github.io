@@ -1,0 +1,9 @@
+p {
+    padding-top: 70px;
+    padding-left: 80px;
+    padding-bottom: 70px;
+    border: 1px solid;
+    width: 60%;
+    height: 50px;
+    float: right;
+}

@@ -1,0 +1,19 @@
+body {
+    border: 100px solid black;
+    width: 50%;
+    padding: 60px;
+}
+
+h6 {
+    font-family: impact;
+    font-size: 60px;
+}
+
+strong {
+    font-size: 100px;
+}
+
+a {
+    letter-spacing: 5px;
+    font-style: italic;
+}
