@@ -1,0 +1,145 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+img {
+    max-width: 100%
+}
+
+body div.container div.book ul li img {
+    max-height: 280px;
+}
+
+/* typography */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    font-style: italic;
+}
+
+/* header + navigation */'
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+}
+
+header h1 {
+    float: left;
+    font-size: 1.2em;
+    padding: 1em;
+    }
+
+body div.container h1 {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 1em;
+
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 2em;
+    padding: 1em;
+}
+
+header nav ul li a {
+    font-size: 1em;
+}
+
+/* layout */
+.container {
+    max-width: 980px;
+    margin: 0px auto;
+}
+
+ul.thumbnails {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+ul.thumbnails li.thumb {
+    margin: 6em;
+    width: 800px;
+}
+
+ul.thumbnails li.thumb p.title {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+ul.thumbnails li.thumb p.caption {
+    font-size: 11px;
+    font-weight: lighter;
+}
+
+.slick-next, .slick-prev {
+    position: absolute;
+    cursor: pointer;
+}
+
+.slick-next { 
+    left: 40px;
+
+}
+
+.slick-prev { 
+    bottom: -28px;
+}
+
+/* footer */
+footer {
+    max-width: 980px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* media queries */
+@media screen and (max-width: 780px) {
+    nav {
+        position: fixed;
+        float: left;
+        bottom: 20px;
+    }
+
+    header nav ul li {
+        margin: 0px;
+        padding-left: 10px;
+        display: block;
+    }
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{title}</title>
+        
+        <style>
+            .title {
+                font-family: helvetica, arial, verdana, sans-serif;
+                letter-spacing: 0.5px;
+                font-size: 40px;
+                line-height: 0%;
+                text-align: center;
+                color: white;
+                font-weight: bold;
+                font-style: italic;
+                
+            }
+            
+            * {
+                background-color: #fdadc6;
+            }
+            
+            .poppy {
+                width: 23%;
+                float: center;
+            }
+            
+            .text-block {
+                border: 20px solid white;
+                width:40%;
+                font-size: 26px;
+                font-family: Helvetica, arial, verdana;
+                font-weight: bold;
+                font-style: italic;
+                color: white;
+                margin: 20px;
+                padding: 30px;
+                text-align: left;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header>
+        <div class="title">
+        <title>{title}</title>
+          <h1>POPPYPOPPYPOPPYPOPPY</h1>
+          <br><h2>POPPYPOPPYPOPPYPOPPY</h2>
+          <br><h3>POPPYPOPPYPOPPYPOPPY</h3>
+          <br><h4>POPPYPOPPYPOPPYPOPPY</h4>
+          </a>
+        </div>
+            
+            
+            <center>><img class="poppy" src="https://40.media.tumblr.com/b13afe0a93803aec4f5d4ec916983e24/tumblr_o3lh71JxWs1v9m212o2_r1_1280.jpg">
+            <img class="poppy" src="https://40.media.tumblr.com/b13afe0a93803aec4f5d4ec916983e24/tumblr_o3lh71JxWs1v9m212o2_r1_1280.jpg">
+            <img class="poppy" src="https://40.media.tumblr.com/b13afe0a93803aec4f5d4ec916983e24/tumblr_o3lh71JxWs1v9m212o2_r1_1280.jpg">
+            <img class="poppy" src="https://40.media.tumblr.com/b13afe0a93803aec4f5d4ec916983e24/tumblr_o3lh71JxWs1v9m212o2_r1_1280.jpg"></center>
+        </header>
+        
+        <center>
+        <div class="posts">
+        {block:posts}
+        {block:text}
+        <div class="text-block">
+            <h2><a href="{permalink}"{title}></a></h2>
+            {body}
+            </div>
+        {/block:text}
+        {/block:posts}
+        </div>
+        </center>
+    </body>
+</html>
